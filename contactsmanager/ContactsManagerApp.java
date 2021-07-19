@@ -30,8 +30,8 @@ public class ContactsManagerApp {
                 ViewContacts.view_contact();
             else if (answer == 2)
                 AddContact.add_contact();
-//            else if (answer == 3)
-//                Search.choose_field();
+            else if (answer == 3)
+                Search.search_contacts();
 //            else if (answer == 4)
 //                Delete.choose_field();
 
