@@ -1,5 +1,6 @@
 package contactsmanager;
 
+import javax.print.DocFlavor;
 import java.io.*;
 import java.util.Scanner;
 
@@ -37,7 +38,7 @@ public class AddContact extends ContactsManagerApp {
             reader1 = new BufferedReader(new FileReader(file1));
 
         } while (valid == false);
-        if (f1.equals("")  || f2.equals("") || f3.equals("")) {
+        if (f1.equals("") || f2.equals("") || f3.equals("")) {
             System.out.println("Input you gave was incorrect: ");
         } else {
             str = f1 + "," + f2 + "," + String.valueOf(f3) + ",";

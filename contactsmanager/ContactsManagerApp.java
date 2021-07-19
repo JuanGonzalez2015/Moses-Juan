@@ -30,10 +30,10 @@ public class ContactsManagerApp {
                 ViewContacts.view_contact();
             else if (answer == 2)
                 AddContact.add_contact();
-//            else if (answer == 3)
-//                Search.choose_field();
+            else if (answer == 3)
+                Search.search_contacts();
 //            else if (answer == 4)
-//                Delete.choose_field();
+//                Delete.delete_contacts();
 
         } while (answer == exit);
         System.out.println("New Person was added to your Address Book");
