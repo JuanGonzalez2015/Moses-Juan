@@ -27,7 +27,7 @@ public class ContactsManagerApp {
                 answer = -1;
             }
             if (answer == 1)
-                View.view_contact();
+                ViewContacts.view_contact();
             else if (answer == 2)
                 AddContact.choose_field();
             else if (answer == 3)
