@@ -10,13 +10,13 @@ public class ContactsManagerApp {
         int exit = 5;
         int answer;
         do {
-//            1. View contacts.
+//            1. View contacts.txt.
 //            2. Add a new contact.
 //            3. Search a contact by name.
 //            4. Delete an existing contact.
 //            5. Exit.
 
-            System.out.println("Enter '1' View contacts");
+            System.out.println("Enter '1' View contacts.txt");
             System.out.println("Enter '2' Add a new contact");
             System.out.println("Enter '3' Search a contact by name");
             System.out.println("Enter '4' Delete an existing contact");
@@ -29,14 +29,14 @@ public class ContactsManagerApp {
             if (answer == 1)
                 ViewContacts.view_contact();
             else if (answer == 2)
-                AddContact.choose_field();
-            else if (answer == 3)
-                Search.choose_field();
-            else if (answer == 4)
-                Delete.choose_field();
+                AddContact.add_contact();
+//            else if (answer == 3)
+//                Search.choose_field();
+//            else if (answer == 4)
+//                Delete.choose_field();
 
         } while (answer == exit);
-        System.out.println("Exiting out of Contacts Manager");
+        System.out.println("New Person was added to your Address Book");
     }
 
 }
