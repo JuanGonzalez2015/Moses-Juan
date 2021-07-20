@@ -5,6 +5,10 @@ import java.util.Scanner;
 
 public class ContactsManagerApp {
     public static void main(String[] args) throws IOException {
+        menu();
+    }
+
+    public static void menu() throws IOException {
 
         Scanner input = new Scanner(System.in);
         int exit = 5;
@@ -36,7 +40,7 @@ public class ContactsManagerApp {
 //                Delete.choose_field();
 
         } while (answer == exit);
-        System.out.println("New Person was added to your Address Book");
+            menu();
     }
 
 }

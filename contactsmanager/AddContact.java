@@ -27,13 +27,13 @@ public class AddContact extends ContactsManagerApp {
             System.out.println("Type Phone Number: ");
             f3 = input.nextLine();
 
-            while ((currentLine1 = reader1.readLine()) != null) {
-                String[] words1 = currentLine1.split(",");
-                if (words1[2].equals((String.valueOf(f3)))) {
-                    duplicate = true;
-                    System.out.println("That number already exists");
-                }
-            }
+//            while ((currentLine1 = reader1.readLine()) != null) {
+//                String[] words1 = currentLine1.split(",");
+//                if (words1[2].equals((String.valueOf(f3)))) {
+//                    duplicate = true;
+//                    System.out.println("That number already exists");
+//                }
+//            }
             reader1 = new BufferedReader(new FileReader(file1));
 
         } while (valid == false);
