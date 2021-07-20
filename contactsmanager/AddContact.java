@@ -14,34 +14,34 @@ public class AddContact extends ContactsManagerApp {
         Scanner input = new Scanner(System.in);
         boolean duplicate, valid;
         String currentLine1;
-        String f1 = "";
-        String f2 = "";
-        String f3 = "";
+        String firstName = "";
+        String lastName = "";
+        String phoneNumber = "";
         String str;
         System.out.println("Type First Name: ");
-        f1 = input.nextLine();
+        firstName = input.nextLine();
         System.out.println("Type Last Name: ");
-        f2 = input.nextLine();
+        lastName = input.nextLine();
         do {
             duplicate = false;
             valid = true;
             System.out.println("Type Phone Number: ");
-            f3 = input.nextLine();
+            phoneNumber = input.nextLine();
 
-            while ((currentLine1 = reader1.readLine()) != null) {
-                String[] words1 = currentLine1.split(",");
-                if (words1[2].equals((String.valueOf(f3)))) {
-                    duplicate = true;
-                    System.out.println("That number already exists");
-                }
-            }
+//            while ((currentLine1 = reader1.readLine()) != null) {
+//                String[] words1 = currentLine1.split(",");
+//                if (words1[2].equals((String.valueOf(f3)))) {
+//                    duplicate = true;
+//                    System.out.println("That number already exists");
+//                }
+//            }
             reader1 = new BufferedReader(new FileReader(file1));
 
         } while (valid == false);
-        if (f1.equals("")  || f2.equals("") || f3.equals("")) {
+        if (firstName.equals("")  || lastName.equals("") || phoneNumber.equals("")) {
             System.out.println("Input you gave was incorrect: ");
         } else {
-            str = f1 + "," + f2 + "," + String.valueOf(f3) + ",";
+            str = firstName + "," + lastName + "," + String.valueOf(phoneNumber) + ",";
             PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(file1, true)));
             out.println(str);
             out.close();
